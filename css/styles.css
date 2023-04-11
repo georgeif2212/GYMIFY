@@ -28,7 +28,7 @@ a {
     flex-flow: column;
     align-items: center;
     padding: 1em;
-    gap: 0.7em;
+    gap: 0.5em;
   }
 
   .header > h1 {
@@ -37,8 +37,8 @@ a {
 
   .ul-nav {
     display: flex;
-    gap: 1em;
-    font-size: 0.8em;
+    gap: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
   }
   
@@ -124,12 +124,14 @@ a {
   .grupos-padre > article {
     overflow: hidden;
   }
+
   .grupos-padre > article > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 2s;
   }
+
   .grupos-padre > article >img:hover {
     transition: 2s;
     width: 125%;
@@ -137,6 +139,51 @@ a {
     filter: blur(3px);
   }
 
+  /* --------- Rutinas ----------  */
+  .main-rutinas {
+    background-color: black;
+    padding: 2em;
+  }
+
+  .main-rutinas > h1 {
+    font-size: 3.5em;
+    padding-left: 1em;
+    text-decoration: underline;
+  }
+
+  .rutinas {
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .rutina {
+    display: flex;
+    flex-flow: column;
+    padding: 2em 2em 4em 2em;
+    width: 320px;
+    align-items: center;
+  }
+
+  .rutina > img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 18em;
+  }
+  .parrafo {
+    order: 2;
+    font-size: 0.8em;
+  }
+
+  .img-rutina{
+    width: 100%;
+  }
+
+  .title-rutina{
+    text-align: center;
+  }
 }
 
 
@@ -209,12 +256,16 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 1em 4em;
-    height: 5em;
+  }
+
+  .footer >h2{
+    font-size: 2em;
   }
 
   .ul-nav-footer {
     font-size: 0.8em;
     display: flex;
+    flex-flow: row;
     align-content: space-around;
     gap: 10px;
   }
@@ -229,6 +280,7 @@ a {
     font-size: 3.5em;
     padding: 0.5em 1em;
     text-decoration: underline;
+    text-align: start;
   }
   .grupos-padre {
     display: grid;
@@ -343,6 +395,14 @@ a {
   .parrafo {
     order: 2;
     font-size: 0.8em;
+  }
+
+  .img-rutina{
+    width: 100%;
+  }
+
+  .title-rutina{
+    text-align: center;
   }
 
   /* -----------Dietas-----------*/
