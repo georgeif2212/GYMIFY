@@ -8,11 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <h1>GYM BIBLE</h1>
@@ -27,24 +34,94 @@
       </nav>
     </header>
 
-    <main class="main">
-      <section>
-        <article class="nosotros">
-          <div>
-            <h1>GYM BIBLE</h1>
-            <img src="../img/nosotros.jpg" alt="" />
+    <main class="main-nosotros">
+      <h1>GYM BIBLE</h1>
+      <div class="container-fluid">
+        <div class="container info">
+          <h2>Lorem</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+            molestiae enim. Accusantium nemo porro unde minima quos molestiae
+            harum! Culpa.
+          </p>
+        </div>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/personas.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-sm-block text-carrusel">
+              <h5>Nosotros somos</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam explicabo
+              </p>
+            </div>
           </div>
-          <div class="historia">
-            <h2>La historia comienza cuando...</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              adipisci ab ratione nihil distinctio, ducimus sapiente omnis
-              numquam quis aut dolorum asperiores dignissimos itaque quia quos
-              commodi quibusdam explicabo nesciunt?
-            </p>
+          <div class="carousel-item">
+            <img src="../img/lema.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-sm-block text-carrusel">
+              <h5>Tu decisión</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                possimus.
+              </p>
+            </div>
           </div>
-        </article>
-      </section>
+          <div class="carousel-item">
+            <img src="../img/carrusel3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-sm-block text-carrusel">
+              <h5>LOREM</h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
+                cum? Voluptates corporis quos ab minima.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- --------- Sección contacto ------- -->
       <section class="contactanos-padre">
         <h1 class="title-contacto">¡Contáctanos!</h1>
         <form action="">
@@ -79,7 +156,6 @@
               <textarea cols="30" rows="10"></textarea>
             </div>
           </div>
-          
         </form>
       </section>
     </main>
@@ -97,5 +173,10 @@
       </nav>
       <h3>Contacto</h3>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
