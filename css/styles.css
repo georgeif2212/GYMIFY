@@ -621,6 +621,15 @@ a {
   font-size: 2em;
   font-weight: 600;
 }
+.carousel-item{
+  width: 100%;
+  height: 30em;
+}
+.carousel-inner > .carousel-item > img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
 .text-carrusel{
   background-color: #b9afaf80 ;
   border-radius: 15px;
