@@ -89,7 +89,7 @@ a {
   position: relative;
 }
 
-.intro >h1{
+.inicio > h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -97,13 +97,25 @@ a {
   color: #fff;
 }
 
-.intro >h2{
+.inicio > h2 {
   color: #eee;
   margin-bottom: 40px;
   font-size: 15px;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.objetivo {
+  padding: 3em;
+}
+
+.objetivo .content {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -202,7 +214,7 @@ a {
   margin: 0%;
   font-size: 2em;
 }
-.subtitle-rutina{
+.subtitle-rutina {
   font-size: 1.5em;
   margin: 0%;
 }
@@ -250,13 +262,13 @@ a {
   padding: 1em;
   text-align: center;
 }
-.dieta-info >h2{
+.dieta-info > h2 {
   font-weight: 600;
   font-size: 2rem;
   margin: 0%;
 }
 
-.dieta-info >h3{
+.dieta-info > h3 {
   font-weight: 600;
   font-size: 1.3rem;
   margin: 0%;
@@ -274,11 +286,11 @@ a {
 
 /* --------- Nosotros ----------  */
 
-.main-nosotros{
+.main-nosotros {
   background-color: black;
 }
 
-.main-nosotros >h1{
+.main-nosotros > h1 {
   padding: 1rem;
   font-weight: 700;
   text-decoration: underline;
@@ -290,16 +302,15 @@ a {
   text-align: center;
 }
 
-.info >h2{
+.info > h2 {
   font-size: 2em;
   font-weight: 600;
 }
-.text-carrusel{
-  background-color: #b9afaf80 ;
+.text-carrusel {
+  background-color: #b9afaf80;
   border-radius: 15px;
   border-color: #3f3f3f80;
 }
-
 
 .contactanos-padre {
   display: grid;
@@ -326,13 +337,13 @@ a {
   grid-area: formul2;
 }
 
-
 @media only screen and (min-width: 1024px) {
+  
   /* -----------INDEX-----------*/
   .header {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    background-color: #66347F;
+    background-color: #66347f;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -361,7 +372,7 @@ a {
 
   .main {
     background-color: black;
-  } 
+  }
 
   .size {
     width: 100%;
@@ -380,14 +391,33 @@ a {
     left: 0;
     right: 0;
   }
-  
-  .intro{
+
+  .intro {
     padding: 3em;
   }
-  
+
+  .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+
+  .btn-get-started:hover {
+    background: #d27685;
+    border: 2px solid #d27685;
+  }
 
   .footer {
-    background-color: #66347F;
+    background-color: #9e4784;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -512,7 +542,7 @@ a {
 
   .main-rutinas > h1 {
     font-size: 3.5em;
-    
+
     text-decoration: underline;
     text-align: start;
     font-weight: bolder;
@@ -594,44 +624,44 @@ a {
     width: 55vw;
   }
 
-/* --------- Nosotros ----------  */
+  /* --------- Nosotros ----------  */
 
-.main-nosotros{
-  background-color: black;
-}
+  .main-nosotros {
+    background-color: black;
+  }
 
-.main-nosotros >h1{
-  font-size: 3.5em;
-  padding-left: 1em;
-  padding-top: 1em;
-  font-weight: 700;
-  text-decoration: underline;
-  
-  text-align: start;
-}
+  .main-nosotros > h1 {
+    font-size: 3.5em;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-weight: 700;
+    text-decoration: underline;
 
-.info {
-  text-align: center;
-}
+    text-align: start;
+  }
 
-.info >h2{
-  font-size: 2em;
-  font-weight: 600;
-}
-.carousel-item{
-  width: 100%;
-  height: 30em;
-}
-.carousel-inner > .carousel-item > img {
-  width:100%;
-  height:100%;
-  object-fit: cover;
-}
-.text-carrusel{
-  background-color: #b9afaf80 ;
-  border-radius: 15px;
-  border-color: #3f3f3f80;
-}
+  .info {
+    text-align: center;
+  }
+
+  .info > h2 {
+    font-size: 2em;
+    font-weight: 600;
+  }
+  .carousel-item {
+    width: 100%;
+    height: 30em;
+  }
+  .carousel-inner > .carousel-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .text-carrusel {
+    background-color: #b9afaf80;
+    border-radius: 15px;
+    border-color: #3f3f3f80;
+  }
 
   .contactanos-padre {
     display: grid;
