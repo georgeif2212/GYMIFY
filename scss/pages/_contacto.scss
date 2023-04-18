@@ -1,0 +1,48 @@
+.main-contacto {
+  background-color: black;
+  h1 {
+    padding: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 3.5em;
+    text-align: center;
+  }
+}
+
+.info {
+  text-align: center;
+  h2 {
+    font-size: 2em;
+    font-weight: 600;
+  }
+}
+
+.text-carrusel {
+  background-color: #b9afaf80;
+  border-radius: 15px;
+  border-color: #3f3f3f80;
+}
+
+.contactanos-padre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 18vh 70vh;
+  grid-template-areas:
+    "titulo titulo"
+    "formul1 formul2";
+  .title-contacto {
+    grid-area: titulo;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.column1 {
+  grid-area: formul1;
+}
+
+.column2 {
+  grid-area: formul2;
+}

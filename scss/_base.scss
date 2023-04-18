@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* ------- INDEX ------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+$primary-color:#66347f;
+$secundary-color:#9E4784;
+$tertiary-color:#D27685;

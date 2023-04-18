@@ -1,0 +1,30 @@
+.header {
+  font-family: "Raleway", sans-serif;
+  background-color: $primary-color;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  h1 {
+    padding: 0.5em 0em 0em 0em;
+    font-size: 2.6em;
+    font-weight: 700;
+    margin: 0%;
+  }
+  .nave {
+    .ul-nav {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #fff;
+      padding: 0%;
+      li {
+        text-align: center;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

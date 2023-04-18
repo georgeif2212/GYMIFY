@@ -1,0 +1,40 @@
+.main-grupos {
+  background-color: black;
+  padding: 1em;
+  justify-content: end;
+  .title-grupos {
+    font-size: 2em;
+    padding: 0.5em;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .grupos-padre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(15, 30vh);
+  
+    grid-gap: 1em;
+    article {
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 2s;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+.grupos-padre > article > img:hover {
+  transition: 2s;
+  width: 125%;
+  height: 125%;
+  filter: blur(3px);
+}

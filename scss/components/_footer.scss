@@ -1,0 +1,28 @@
+.footer {
+  background-color: $secundary-color;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+
+  h2 {
+    font-size: 1em;
+  }
+  .nav {
+    .ul-nav-footer {
+      font-size: 0.5em;
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      padding: 0%;
+      li {
+        a {
+          font-weight: 400;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+

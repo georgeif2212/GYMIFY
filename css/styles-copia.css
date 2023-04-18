@@ -7,26 +7,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #fff;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-li {
-  display: inline-block;
-}
-
-a {
-  text-decoration: none;
-}
-
 /* ------- INDEX ------- */
 * {
   margin: 0;
@@ -284,13 +264,13 @@ a {
   width: 100%;
 }
 
-/* --------- Nosotros ----------  */
+/* --------- Contacto ----------  */
 
-.main-nosotros {
+.main-contacto {
   background-color: black;
 }
 
-.main-nosotros > h1 {
+.main-contacto > h1 {
   padding: 1rem;
   font-weight: 700;
   text-decoration: underline;
@@ -623,13 +603,13 @@ a {
     width: 55vw;
   }
 
-  /* --------- Nosotros ----------  */
+  /* --------- contacto ----------  */
 
-  .main-nosotros {
+  .main-contacto {
     background-color: black;
   }
 
-  .main-nosotros > h1 {
+  .main-contacto > h1 {
     font-size: 3.5em;
     padding-left: 1em;
     padding-top: 1em;

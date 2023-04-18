@@ -1,0 +1,35 @@
+.main-rutinas {
+  background-color: black;
+  padding: 2em;
+  h1 {
+    font-size: 3.5em;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0.3em;
+    font-weight: 700;
+  }
+}
+
+.rutina-box{
+  .title-rutina {
+    text-align: center;
+    margin: 0%;
+    font-size: 2em;
+  }
+  .subtitle-rutina {
+    font-size: 1.5em;
+    margin: 0%;
+  }
+  .img-rutina {
+    width: 100%;
+  }
+  .parrafo {
+    order: 2;
+    font-size: 0.8em;
+  }
+}
+
+
+
+
+
