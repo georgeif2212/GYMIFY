@@ -9,7 +9,7 @@
   h2 {
     font-size: 1em;
   }
-  .nav {
+  nav {
     .ul-nav-footer {
       font-size: 0.5em;
       display: flex;
@@ -26,3 +26,35 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .footer {
+    background-color: $secundary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 4em;
+    h2 {
+      font-size: 2em;
+      margin: 0%;
+    }
+    nav{
+      .ul-nav-footer {
+        font-size: 0.8em;
+        display: flex;
+        flex-flow: row;
+        gap: 1rem;
+        font-weight: 400;
+        margin: 0%;
+        padding: 0%;
+        li{
+          color: #fff;
+          a {
+          font-weight: 400;
+          color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+}

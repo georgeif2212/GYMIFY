@@ -360,7 +360,13 @@ a {
     background-size: cover;
     display: flex;
     align-items: center;
+    position: relative;
   }
+
+  .size .container {
+    padding-top: 80px;
+  }
+
   .size:before {
     content: "";
     background: rgba(0, 0, 0, 0.6);
@@ -369,10 +375,6 @@ a {
     top: 0;
     left: 0;
     right: 0;
-  }
-
-  .intro {
-    padding: 3em;
   }
 
   .btn-get-started {
