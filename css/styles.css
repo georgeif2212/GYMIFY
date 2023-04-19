@@ -205,11 +205,18 @@ a {
   line-height: 32px;
   font-size: 24px;
 }
+.main .objetivo .content ul li i {
+  left: 0;
+  top: 7px;
+  position: absolute;
+  font-size: 20px;
+  color: #D27685;
+}
 
 @media only screen and (min-width: 1024px) {
-  .size {
+  .main .size {
     width: 100%;
-    height: 10vh;
+    height: 80vh;
   }
 }
 .main-grupos {
@@ -218,7 +225,8 @@ a {
   justify-content: end;
 }
 .main-grupos .title-grupos {
-  font-size: 2em;
+  font-size: 3.5em;
+  font-weight: 700;
   padding: 0.5em;
   text-decoration: underline;
   text-align: center;
@@ -239,13 +247,79 @@ a {
   transition: 2s;
 }
 
-.grupos-padre > article > img:hover {
-  transition: 2s;
-  width: 125%;
-  height: 125%;
-  filter: blur(3px);
+@media only screen and (min-width: 1024px) {
+  .main-grupos {
+    background-color: #000000;
+    padding: 2em;
+  }
+  .main-grupos .title-grupos {
+    font-size: 3.5em;
+    padding: 0.5em;
+    text-decoration: underline;
+    text-align: start;
+    font-weight: bolder;
+  }
+  .main-grupos .grupos-padre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 30vh);
+    grid-template-areas: "grupoA grupoA grupoB grupoC" "empty1 grupoD grupoE grupoG" "grupoF grupoF grupoE empty" "grupoF grupoF grupoE grupoH" "grupoI grupoI grupoI grupoJ" "grupoK grupoL grupoM grupoN" "grupoO grupoO empty3 grupoN";
+    grid-gap: 0.5em;
+  }
+  .main-grupos .grupos-padre article {
+    overflow: hidden;
+  }
+  .main-grupos .grupos-padre article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main-grupos .grupos-padre .g-A {
+    grid-area: grupoA;
+  }
+  .main-grupos .grupos-padre .g-B {
+    grid-area: grupoB;
+  }
+  .main-grupos .grupos-padre .g-C {
+    grid-area: grupoC;
+  }
+  .main-grupos .grupos-padre .g-D {
+    grid-area: grupoD;
+  }
+  .main-grupos .grupos-padre .g-E {
+    grid-area: grupoE;
+  }
+  .main-grupos .grupos-padre .g-F {
+    grid-area: grupoF;
+  }
+  .main-grupos .grupos-padre .g-G {
+    grid-area: grupoG;
+  }
+  .main-grupos .grupos-padre .g-H {
+    grid-area: grupoH;
+  }
+  .main-grupos .grupos-padre .g-I {
+    grid-area: grupoI;
+  }
+  .main-grupos .grupos-padre .g-J {
+    grid-area: grupoJ;
+  }
+  .main-grupos .grupos-padre .g-K {
+    grid-area: grupoK;
+  }
+  .main-grupos .grupos-padre .g-L {
+    grid-area: grupoL;
+  }
+  .main-grupos .grupos-padre .g-M {
+    grid-area: grupoM;
+  }
+  .main-grupos .grupos-padre .g-N {
+    grid-area: grupoN;
+  }
+  .main-grupos .grupos-padre .g-O {
+    grid-area: grupoO;
+  }
 }
-
 .main-rutinas {
   background-color: black;
   padding: 2em;
@@ -312,6 +386,26 @@ a {
   padding: 5px;
   width: 100%;
 }
+.main-dietas .dietas-padre .dieta-inverted-info {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+}
+.main-dietas .dietas-padre .dieta-inverted-info h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0%;
+  text-transform: uppercase;
+}
+.main-dietas .dietas-padre .dieta-inverted-info h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0%;
+}
 .main-dietas .dietas-padre .dieta-info {
   display: flex;
   flex-flow: column;
@@ -325,6 +419,7 @@ a {
   font-weight: 600;
   font-size: 2rem;
   margin: 0%;
+  text-transform: uppercase;
 }
 .main-dietas .dietas-padre .dieta-info h3 {
   font-weight: 600;
@@ -332,6 +427,75 @@ a {
   margin: 0%;
 }
 
+@media only screen and (min-width: 1024px) {
+  .main-dietas {
+    background-color: black;
+    padding: 2em;
+  }
+  .main-dietas h1 {
+    font-size: 3.5em;
+    padding-left: 1em;
+    text-decoration: underline;
+    text-align: start;
+  }
+  .main-dietas .dietas-padre {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  .main-dietas .dietas-padre .dieta {
+    display: flex;
+    flex-flow: row;
+    padding: 0.5em 0.5em 0.5em 2em;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    border-radius: 1%;
+  }
+  .main-dietas .dietas-padre .dieta-info {
+    display: flex;
+    flex-flow: column;
+    width: 32vw;
+    align-content: center;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+  }
+  .main-dietas .dietas-padre .dieta img {
+    padding: 5px;
+    width: 55vw;
+  }
+  .main-dietas .dietas-padre .dieta-inverted {
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 0.5em 0.5em 0.5em 2em;
+    justify-content: space-between;
+    border: 1px solid #fff;
+  }
+  .main-dietas .dietas-padre .dieta-inverted img {
+    padding: 5px;
+    width: 55vw;
+  }
+  .main-dietas .dietas-padre .dieta-inverted-info {
+    display: flex;
+    flex-flow: column;
+    width: 32vw;
+    align-content: center;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+  }
+  .main-dietas .dietas-padre .dieta-inverted-info h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0%;
+    text-transform: uppercase;
+  }
+  .main-dietas .dietas-padre .dieta-inverted-info h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0%;
+  }
+}
 .main-contacto {
   background-color: black;
 }

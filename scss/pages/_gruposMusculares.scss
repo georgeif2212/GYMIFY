@@ -3,7 +3,8 @@
   padding: 1em;
   justify-content: end;
   .title-grupos {
-    font-size: 2em;
+    font-size: 3.5em;
+    font-weight: 700;
     padding: 0.5em;
     text-decoration: underline;
     text-align: center;
@@ -12,7 +13,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(15, 30vh);
-  
+
     grid-gap: 1em;
     article {
       overflow: hidden;
@@ -26,15 +27,90 @@
   }
 }
 
-
-
-
-
-
-
-.grupos-padre > article > img:hover {
-  transition: 2s;
-  width: 125%;
-  height: 125%;
-  filter: blur(3px);
+@media only screen and (min-width: 1024px) {
+  .main-grupos {
+    background-color: #000000;
+    padding: 2em;
+    .title-grupos {
+      font-size: 3.5em;
+      padding: 0.5em;
+      text-decoration: underline;
+      text-align: start;
+      font-weight: bolder;
+    }
+    .grupos-padre {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(7, 30vh);
+      grid-template-areas:
+        "grupoA grupoA grupoB grupoC"
+        "empty1 grupoD grupoE grupoG"
+        "grupoF grupoF grupoE empty"
+        "grupoF grupoF grupoE grupoH"
+        "grupoI grupoI grupoI grupoJ"
+        "grupoK grupoL grupoM grupoN"
+        "grupoO grupoO empty3 grupoN";
+      grid-gap: 0.5em;
+      article {
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .g-A {
+        grid-area: grupoA;
+      }
+      .g-B {
+        grid-area: grupoB;
+      }
+      .g-C {
+        grid-area: grupoC;
+      }
+      .g-D {
+        grid-area: grupoD;
+      }
+      .g-E {
+        grid-area: grupoE;
+      }
+      .g-F {
+        grid-area: grupoF;
+      }
+      .g-G {
+        grid-area: grupoG;
+      }
+      .g-H {
+        grid-area: grupoH;
+      }
+      .g-I {
+        grid-area: grupoI;
+      }
+      .g-J {
+        grid-area: grupoJ;
+      }
+      .g-K {
+        grid-area: grupoK;
+      }
+      .g-L {
+        grid-area: grupoL;
+      }
+      .g-M {
+        grid-area: grupoM;
+      }
+      .g-N {
+        grid-area: grupoN;
+      }
+      .g-O {
+        grid-area: grupoO;
+      }
+    }
+  }
 }
+
+// .grupos-padre > article > img:hover {
+//   transition: 2s;
+//   width: 125%;
+//   height: 125%;
+//   filter: blur(3px);
+// }
