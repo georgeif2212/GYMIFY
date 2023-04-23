@@ -1,7 +1,9 @@
 .main-contacto {
   background-color: black;
   h1 {
-    font-size: 3.5em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 2.5em;
     text-decoration: underline;
     text-align: center;
     font-weight: 700;
@@ -42,3 +44,14 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .main-contacto {
+    h1 {
+      padding-left: 1em;
+      font-size: 3.5em;
+      text-decoration: underline;
+      text-align: start;
+      font-weight: 700;
+    }
+  }
+}
