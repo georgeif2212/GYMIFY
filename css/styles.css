@@ -184,8 +184,8 @@ a {
 }
 
 .card {
-  border: 2px solid #D27685;
-  background-color: black;
+  border: 2px solid #201f1f;
+  background-color: #1b1a1a;
 }
 
 .main {
@@ -242,6 +242,12 @@ a {
 }
 .main .objetivo .content ul li {
   margin-bottom: 0.5em;
+  gap: 10px;
+}
+.main .objetivo .content ul li i {
+  left: 0;
+  font-size: 20px;
+  color: #D27685;
 }
 .main .objetivo .content .italic {
   font-style: italic;
@@ -356,9 +362,10 @@ a {
 }
 .main-rutinas {
   background-color: black;
-  padding: 2em;
+  padding: 1em;
 }
 .main-rutinas h1 {
+  padding-left: 1em;
   font-size: 3.5em;
   text-align: center;
   text-decoration: underline;
