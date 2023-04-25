@@ -183,6 +183,11 @@ a {
   height: 270px;
 }
 
+.card {
+  border: 2px solid #D27685;
+  background-color: black;
+}
+
 .main {
   background-color: black;
 }
@@ -223,24 +228,23 @@ a {
 .main .objetivo {
   padding: 3em;
 }
-.main .objetivo .content h2 {
+.main .objetivo .content h3 {
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-.main .objetivo .content h3 {
+.main .objetivo .content h4 {
   font-weight: 500;
   line-height: 32px;
   font-size: 24px;
 }
-.main .objetivo .content ul li i {
-  left: 0;
-  top: 7px;
-  position: absolute;
-  font-size: 20px;
-  color: #D27685;
+.main .objetivo .content ul li {
+  margin-bottom: 0.5em;
+}
+.main .objetivo .content .italic {
+  font-style: italic;
 }
 
 @media only screen and (min-width: 1024px) {
