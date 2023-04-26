@@ -168,8 +168,8 @@ a {
   color: white;
 }
 .boton-general:hover {
-  background: #502964;
-  border: 2px solid #502964;
+  background: #422152;
+  border: 2px solid #422152;
 }
 
 .division {
@@ -185,7 +185,7 @@ a {
 
 .card {
   border: 2px solid #201f1f;
-  background-color: #1b1a1a;
+  background-color: #0f0f0f;
 }
 
 .main {
@@ -404,10 +404,11 @@ a {
   gap: 1em;
 }
 .main-dietas .dietas-padre .dieta {
+  background-color: #0f0f0f;
   display: flex;
   flex-flow: column;
   padding: 0.5em 0.5em;
-  border: 1px solid #fff;
+  border: 1px solid #201f1f;
   border-radius: 1%;
 }
 .main-dietas .dietas-padre .dieta img {
@@ -419,7 +420,7 @@ a {
   flex-flow: column;
   padding: 0.5em 0.5em;
   justify-content: space-between;
-  border: 1px solid #fff;
+  border: 1px solid #201f1f;
 }
 .main-dietas .dietas-padre .dieta-inverted img {
   padding: 5px;
@@ -487,7 +488,6 @@ a {
     flex-flow: row;
     padding: 0.5em 0.5em 0.5em 2em;
     justify-content: space-between;
-    border: 1px solid #fff;
     border-radius: 1%;
   }
   .main-dietas .dietas-padre .dieta-info {
@@ -508,7 +508,6 @@ a {
     flex-flow: row-reverse;
     padding: 0.5em 0.5em 0.5em 2em;
     justify-content: space-between;
-    border: 1px solid #fff;
   }
   .main-dietas .dietas-padre .dieta-inverted img {
     padding: 5px;
