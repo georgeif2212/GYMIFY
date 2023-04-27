@@ -1,5 +1,5 @@
 .main-grupos {
-  background-color: black;
+  background-color: $background-color;
   padding: 1em;
   justify-content: end;
   .title-grupos {
@@ -29,7 +29,7 @@
 
 @media only screen and (min-width: 1024px) {
   .main-grupos {
-    background-color: #000000;
+    background-color: $background-color;
     padding: 2em;
     .title-grupos {
       font-size: 3.5em;

@@ -1,5 +1,5 @@
 .main-dietas {
-  background-color: black;
+  background-color: $background-color;
   padding: 2em;
   h1 {
     font-size: 3.5em;
@@ -81,7 +81,7 @@
 
 @media only screen and (min-width: 1024px) {
   .main-dietas {
-    background-color: black;
+    background-color: $background-color;
     padding: 2em;
     h1 {
       font-size: 3.5em;
