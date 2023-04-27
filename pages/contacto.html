@@ -7,7 +7,10 @@
     <!--------LINK FONTS API---------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
@@ -19,6 +22,8 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <!--------ANIMACIÓN AOS ---------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--------LINK CSS STYLES---------->
     <link rel="stylesheet" href="../css/styles.css" />
     <!--------MERTA DESCRIPTION ROBOTS---------->
@@ -28,7 +33,6 @@
     />
     <meta name="robots" content="index,follow" />
     <title>Contacto | GYM BIBLE</title>
-    
   </head>
 
   <body>
@@ -46,9 +50,17 @@
     </header>
 
     <main class="main-contacto">
-      <h1>¿Quiénes somos?</h1>
+      <h1 data-aos="fade-right"
+      data-aos-delay="100"
+      data-aos-duration="500">¿Quiénes somos?</h1>
 
-      <div id="carousel-contacto" class="carousel slide">
+      <div
+        id="carousel-contacto"
+        class="carousel slide"
+        data-aos="fade-up-left"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
         <div class="carousel-indicators">
           <button
             type="button"
@@ -76,9 +88,7 @@
             <img src="../img/personas.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-sm-block text-carrusel">
               <h5>Nosotros somos</h5>
-              <p>
-                Un equipo con el objetivo de que cumplas tus objetivos.
-              </p>
+              <p>Un equipo con el objetivo de que cumplas tus objetivos.</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -94,9 +104,7 @@
             <img src="../img/carrusel3.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-sm-block text-carrusel">
               <h5>Tu esfuerzo</h5>
-              <p>
-                Todo depende de ti y de nadie más, confía en el proceso.
-              </p>
+              <p>Todo depende de ti y de nadie más, confía en el proceso.</p>
             </div>
           </div>
         </div>
@@ -124,7 +132,12 @@
       <section class="contacto">
         <article class="container">
           <div class="row">
-            <div class="col-lg-4">
+            <div
+              class="col-lg-4"
+              data-aos="fade-right"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
               <div class="section-title">
                 <h2>Contacto</h2>
                 <p>
@@ -134,7 +147,12 @@
               </div>
             </div>
 
-            <div class="col-lg-8">
+            <div
+              class="col-lg-8"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
               <iframe
                 class="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.393912478474!2d-99.2852058902073!3d19.352089143173583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2074a4aea180d%3A0x1151e61121fd01f3!2sUniversidad%20Aut%C3%B3noma%20Metropolitana%20Unidad%20Cuajimalpa!5e0!3m2!1ses!2smx!4v1682202931357!5m2!1ses!2smx"
@@ -205,39 +223,6 @@
             </div>
           </div>
         </article>
-        <!-- <form action="">
-          <div class="colum1">
-            <div>
-              <label for="nombre-usuario">Nombre</label>
-              <input id="nombre-usuario" type="text" />
-            </div>
-            <div>
-              <label for="apellidoP-usuario">Apellido paterno</label>
-              <input id="apellidoP-usuario" type="text" />
-            </div>
-            <div>
-              <label for="apellidoM-usuario">Apellido materno</label>
-              <input id="apellidoM-usuario" type="text" />
-            </div>
-            <div>
-              <input type="submit" value="ENVIAR PRO" />
-            </div>
-          </div>
-          <div class="column2">
-            <div>
-              <label for="correo-usuario">Correo</label>
-              <input id="correo-usuario" type="email" />
-            </div>
-            <div>
-              <label for="tel-usuario">telefono</label>
-              <input id="tel-usuario" type="number" />
-            </div>
-            <div>
-              <label for="coment-usuario">Comentarios</label>
-              <textarea cols="30" rows="10"></textarea>
-            </div>
-          </div>
-        </form> -->
       </section>
     </main>
 
@@ -259,5 +244,9 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 .footer {
+  color: $font-color;
   background-color: $secundary-color;
   display: flex;
   flex-flow: row;
@@ -19,7 +20,7 @@
       li {
         a {
           font-weight: 400;
-          color: #fff;
+          color: $font-color
         }
       }
     }
@@ -47,10 +48,10 @@
         margin: 0%;
         padding: 0%;
         li{
-          color: #fff;
+          color: $font-color;
           a {
           font-weight: 400;
-          color: #fff;
+          color: $font-color;
           }
         }
       }

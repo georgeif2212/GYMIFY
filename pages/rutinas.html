@@ -7,7 +7,10 @@
     <!--------LINK FONTS API---------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
@@ -19,6 +22,8 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <!--------ANIMACIÓN AOS ---------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--------LINK CSS STYLES---------->
     <link rel="stylesheet" href="../css/styles.css" />
     <!--------MERTA DESCRIPTION ROBOTS---------->
@@ -30,7 +35,7 @@
     <meta name="robots" content="index,follow" />
     <title>Rutinas | GYM BIBLE</title>
   </head>
-  
+
   <body>
     <header class="header">
       <h1>GYM BIBLE</h1>
@@ -46,10 +51,17 @@
     </header>
 
     <main class="main-rutinas">
-      <h1 class="text-sm-center text-lg-start">Rutinas</h1>
+      <h1 class="text-sm-center text-lg-start" data-aos="fade-right"
+      data-aos-delay="100"
+      data-aos-duration="500">Rutinas</h1>
       <section class="container">
         <div class="row gy-5">
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+          <div
+            class="col-md-6 col-lg-4 d-flex align-items-stretch"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
             <div class="card text-white">
               <img class="card-img-top" src="../img/6dias.jpg" alt="" />
               <div class="card-body">
@@ -74,7 +86,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch row-space">
+          <div
+            class="col-md-6 col-lg-4 d-flex align-items-stretch row-space"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
             <div class="card text-white">
               <img class="card-img-top" src="../img/2dias.jpg" alt="" />
               <div class="card-body">
@@ -104,7 +121,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+          <div
+            class="col-md-6 col-lg-4 d-flex align-items-stretch"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
             <div class="card text-white">
               <img class="card-img-top" src="../img/3dias.jpg" alt="" />
               <div class="card-body">
@@ -131,7 +153,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+          <div
+            class="col-md-6 col-lg-4 d-flex align-items-stretch"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
             <div class="card text-white">
               <img class="card-img-top" src="../img/4dias.jpg" alt="" />
               <div class="card-body">
@@ -157,7 +184,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+          <div
+            class="col-md-6 col-lg-4 d-flex align-items-stretch"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
             <div class="card text-white">
               <img class="card-img-top" src="../img/5dias.jpg" alt="" />
               <div class="card-body">
@@ -183,7 +215,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+          <div
+            class="col-md-6 col-lg-4 d-flex align-items-stretch"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
             <div class="card text-white">
               <img class="card-img-top" src="../img/6dias.jpg" alt="" />
               <div class="card-body">
@@ -233,5 +270,9 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1,8 +1,9 @@
 .main {
+  color: $font-color;
   background-color: $background-color;
   .size {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background: url("../img/gym.jpg") center center;
     background-size: cover;
     position: relative;
@@ -24,10 +25,10 @@
         font-size: 48px;
         font-weight: 700;
         line-height: 56px;
-        color: #fff;
+        color: $font-color;
       }
       h2 {
-        color: #eee;
+        color: $font-color;
         margin-bottom: 40px;
         font-size: 15px;
         font-weight: 500;

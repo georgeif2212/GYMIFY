@@ -7,7 +7,10 @@
     <!--------LINK FONTS API---------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
@@ -19,6 +22,8 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <!--------ANIMACIÓN AOS ---------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--------LINK CSS STYLES---------->
     <link rel="stylesheet" href="../css/styles.css" />
     <!--------MERTA DESCRIPTION ROBOTS---------->
@@ -44,9 +49,16 @@
     </header>
 
     <main class="main-dietas">
-      <h1 class="text-sm-center text-lg-start">Dietas</h1>
+      <h1 class="text-sm-center text-lg-start" data-aos="fade-right"
+      data-aos-delay="100"
+      data-aos-duration="500">Dietas</h1>
       <section class="dietas-padre">
-        <article class="dieta">
+        <article
+          class="dieta"
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
           <div class="dieta-info">
             <h2>Déficit calórico</h2>
             <h3>Pérdida de peso</h3>
@@ -57,9 +69,14 @@
               quisquam?
             </p>
           </div>
-          <img src="../img/deficit.jpg" alt=""/>
+          <img src="../img/deficit.jpg" alt="" />
         </article>
-        <article class="dieta-inverted">
+        <article
+          class="dieta-inverted"
+          data-aos="fade-left"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
           <div class="dieta-inverted-info">
             <h2>Equilibrio calórico</h2>
             <h3>Mantenimiento</h3>
@@ -72,7 +89,12 @@
           </div>
           <img src="../img/equilibrio.jpg" alt="Persona saltando con pelota" />
         </article>
-        <article class="dieta">
+        <article
+          class="dieta"
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
           <div class="dieta-info">
             <h2>Superávit calórico</h2>
             <h3>Aumento de peso</h3>
@@ -106,5 +128,9 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
