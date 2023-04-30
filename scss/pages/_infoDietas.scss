@@ -1,0 +1,35 @@
+.main-info-dietas {
+  background-color: $background-color;
+  color: $font-color;
+  h1 {
+    padding-top: 1em;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+  ul {
+    li {
+      i {
+        left: 0;
+        text-decoration: none;
+        
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-info-dietas {
+    h1 {
+      padding: 0%;
+      text-align: start;
+    }
+  }
+}

@@ -190,6 +190,23 @@ a {
 .card {
   border: 2px solid #201f1f;
   background-color: #0f0f0f;
+  width: 100%;
+}
+
+.span-color {
+  color: #FFD93D;
+}
+
+.ri-error-warning-fill {
+  color: red;
+}
+
+.ri-checkbox-blank-circle-fill {
+  color: white;
+}
+
+.ri-check-double-line {
+  color: green;
 }
 
 .main {
@@ -596,6 +613,33 @@ a {
     text-decoration: underline;
     text-align: start;
     font-weight: 700;
+  }
+}
+.main-info-dietas {
+  background-color: #000000;
+  color: white;
+}
+.main-info-dietas h1 {
+  padding-top: 1em;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-info-dietas img {
+  width: 100%;
+}
+.main-info-dietas ul li i {
+  left: 0;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-info-dietas h1 {
+    padding: 0%;
+    text-align: start;
   }
 }
 
