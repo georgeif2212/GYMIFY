@@ -674,7 +674,9 @@ footer .social-media {
   font-size: 1.3em;
 }
 .main-info-dietas img {
-  width: 100%;
+  width: 80%;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 .main-info-dietas ul li i {
   left: 0;
