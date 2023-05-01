@@ -52,7 +52,7 @@ footer {
     h4 {
       color: #252525;
       font-weight: 600;
-      font-size: 2em;
+      font-size: 1.8em;
     }
     .ul-nav-footer {
       font-size: 1em;
@@ -66,6 +66,7 @@ footer {
           color: black;
           &:hover{
             color: $secundary-color;
+            text-decoration: underline;
           }
         }
         

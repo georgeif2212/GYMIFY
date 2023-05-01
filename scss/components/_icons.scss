@@ -6,11 +6,15 @@
   color: white;
 }
 
-.ri-check-double-line{
+.ri-check-double-line {
   color: green;
 }
 
-.logos{
+.ri-arrow-drop-right-line{
+  font-size: 1em;
+}
+
+.logos {
   background-color: #000000;
   color: white;
   padding: 0.5em;
@@ -18,7 +22,10 @@
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  &:hover{
-    color: $secundary-color;
+  &:hover {
+    color: $tertiary-color;
+    transition-duration: 300ms;
+    padding: 0.6em;
+    font-size: 1.6em;
   }
 }
