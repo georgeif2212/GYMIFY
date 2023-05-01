@@ -85,57 +85,83 @@ a {
     color: white;
   }
 }
-.footer {
-  color: white;
-  background-color: #070A52;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: space-around;
-  padding: 1em;
+footer {
+  color: black;
+  background-color: white;
+  padding: 2em;
+  font-family: "Raleway", sans-serif;
 }
-.footer h2 {
-  font-size: 1em;
+footer h3 {
+  font-size: 3em;
+  font-weight: 700;
 }
-.footer nav .ul-nav-footer {
-  font-size: 0.5em;
+footer h4 {
+  color: #252525;
+  font-weight: 600;
+  font-size: 2em;
+}
+footer .ul-nav-footer {
+  font-size: 1.2em;
+  font-weight: 500;
   display: flex;
   flex-flow: column;
-  text-align: center;
-  padding: 0%;
 }
-.footer nav .ul-nav-footer li a {
+footer .ul-nav-footer li {
+  padding-bottom: 0.5em;
+}
+footer .ul-nav-footer li a {
   font-weight: 400;
-  color: white;
+  color: black;
+}
+footer .presentacion h4 {
+  padding: 0%;
+  padding-top: 1em;
+}
+footer .social-media {
+  padding: 0%;
+  padding-left: 1em;
+  display: flex;
+  gap: 1.5em;
 }
 
 @media only screen and (min-width: 1024px) {
-  .footer {
-    background-color: #070A52;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em 4em;
+  footer {
+    color: black;
+    background-color: white;
+    padding: 2em;
+    font-family: "Raleway", sans-serif;
   }
-  .footer h2 {
+  footer h3 {
+    font-size: 3em;
+    font-weight: 700;
+  }
+  footer h4 {
+    color: #252525;
+    font-weight: 600;
     font-size: 2em;
-    margin: 0%;
   }
-  .footer nav .ul-nav-footer {
-    font-size: 0.8em;
+  footer .ul-nav-footer {
+    font-size: 1em;
+    font-weight: 500;
     display: flex;
-    flex-flow: row;
-    gap: 1rem;
-    font-weight: 400;
-    margin: 0%;
+    flex-flow: column;
     padding: 0%;
   }
-  .footer nav .ul-nav-footer li {
-    color: white;
+  footer .ul-nav-footer li a {
+    font-weight: 500;
+    color: black;
   }
-  .footer nav .ul-nav-footer li a {
-    font-weight: 400;
-    color: white;
+  footer .ul-nav-footer li a:hover {
+    color: #070A52;
+  }
+  footer .presentacion h4 {
+    padding: 0%;
+  }
+  footer .social-media {
+    padding: 0%;
+    padding-left: 1em;
+    display: flex;
+    gap: 1.5em;
   }
 }
 .btn-get-started {
@@ -197,6 +223,10 @@ a {
   color: #FFD93D;
 }
 
+.span-weight {
+  font-weight: bold;
+}
+
 .ri-error-warning-fill {
   color: red;
 }
@@ -207,6 +237,19 @@ a {
 
 .ri-check-double-line {
   color: green;
+}
+
+.logos {
+  background-color: #000000;
+  color: white;
+  padding: 0.5em;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.logos:hover {
+  color: #070A52;
 }
 
 .main {
@@ -394,21 +437,8 @@ a {
   margin-bottom: 0.3em;
   font-weight: 700;
 }
-
-.rutina-box .title-rutina {
-  text-align: center;
-  margin: 0%;
-  font-size: 2em;
-}
-.rutina-box .subtitle-rutina {
-  font-size: 1.5em;
-}
-.rutina-box .img-rutina {
-  width: 100%;
-}
-.rutina-box .parrafo {
-  order: 2;
-  font-size: 0.8em;
+.main-rutinas h2 {
+  font-size: 1.2em;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -627,6 +657,9 @@ a {
   margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+.main-info-dietas h2 {
+  font-size: 1.3em;
 }
 .main-info-dietas img {
   width: 100%;

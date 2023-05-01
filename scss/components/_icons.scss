@@ -9,3 +9,16 @@
 .ri-check-double-line{
   color: green;
 }
+
+.logos{
+  background-color: #000000;
+  color: white;
+  padding: 0.5em;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  &:hover{
+    color: $secundary-color;
+  }
+}

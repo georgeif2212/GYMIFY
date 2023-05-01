@@ -1,61 +1,86 @@
-.footer {
-  color: $font-color;
-  background-color: $secundary-color;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: space-around;
-  padding: 1em;
-
-  h2 {
-    font-size: 1em;
+footer {
+  color: black;
+  background-color: white;
+  padding: 2em;
+  font-family: "Raleway", sans-serif;
+  h3 {
+    font-size: 3em;
+    font-weight: 700;
   }
-  nav {
-    .ul-nav-footer {
-      font-size: 0.5em;
-      display: flex;
-      flex-flow: column;
-      text-align: center;
-      padding: 0%;
-      li {
-        a {
-          font-weight: 400;
-          color: $font-color
-        }
+  h4 {
+    color: #252525;
+    font-weight: 600;
+    font-size: 2em;
+  }
+  .ul-nav-footer {
+    font-size: 1.2em;
+    font-weight: 500;
+    display: flex;
+    flex-flow: column;
+    li {
+      padding-bottom: 0.5em;
+      a {
+        font-weight: 400;
+        color: black;
       }
     }
+  }
+  .presentacion {
+    h4 {
+      padding: 0%;
+      padding-top: 1em;
+    }
+  }
+  .social-media {
+    padding: 0%;
+    padding-left: 1em;
+    display: flex;
+    gap: 1.5em;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .footer {
-    background-color: $secundary-color;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em 4em;
-    h2 {
-      font-size: 2em;
-      margin: 0%;
+  footer {
+    color: black;
+    background-color: white;
+    padding: 2em;
+    font-family: "Raleway", sans-serif;
+    h3 {
+      font-size: 3em;
+      font-weight: 700;
     }
-    nav{
-      .ul-nav-footer {
-        font-size: 0.8em;
-        display: flex;
-        flex-flow: row;
-        gap: 1rem;
-        font-weight: 400;
-        margin: 0%;
-        padding: 0%;
-        li{
-          color: $font-color;
-          a {
-          font-weight: 400;
-          color: $font-color;
+    h4 {
+      color: #252525;
+      font-weight: 600;
+      font-size: 2em;
+    }
+    .ul-nav-footer {
+      font-size: 1em;
+      font-weight: 500;
+      display: flex;
+      flex-flow: column;
+      padding: 0%;
+      li {
+        a {
+          font-weight: 500;
+          color: black;
+          &:hover{
+            color: $secundary-color;
           }
         }
+        
       }
     }
+    .presentacion {
+      h4 {
+        padding: 0%;
+      }
+    }
+    .social-media {
+      padding: 0%;
+      padding-left: 1em;
+      display: flex;
+      gap: 1.5em;
+    }
   }
-
 }

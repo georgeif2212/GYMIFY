@@ -10,25 +10,12 @@
     margin-bottom: 0.3em;
     font-weight: 700;
   }
+  h2{
+    font-size: 1.2em;
+  }
 }
 
-.rutina-box{
-  .title-rutina {
-    text-align: center;
-    margin: 0%;
-    font-size: 2em;
-  }
-  .subtitle-rutina {
-    font-size: 1.5em;
-  }
-  .img-rutina {
-    width: 100%;
-  }
-  .parrafo {
-    order: 2;
-    font-size: 0.8em;
-  }
-}
+
 
 @media only screen and (min-width: 1024px) {
   .main-rutinas {
