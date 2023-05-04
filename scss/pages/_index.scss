@@ -1,7 +1,7 @@
 .main {
   color: $font-color;
   background-color: $background-color;
-  .size {
+  .hero {
     width: 100%;
     height: 80vh;
     background: url("../img/gym.jpg") center center;
@@ -19,7 +19,7 @@
       left: 0;
       right: 0;
     }
-    .inicio {
+    &__text{
       h1 {
         margin: 0 0 10px 0;
         font-size: 48px;
@@ -40,7 +40,7 @@
   }
   .objetivo {
     padding: 3em;
-    .content {
+    &__content {
       h3 {
         font-weight: 700;
         font-size: 48px;
@@ -58,7 +58,6 @@
           margin-bottom: 0.5em;
           i {
             left: 0;
-
             font-size: 20px;
             color: $tertiary-color;
           }
