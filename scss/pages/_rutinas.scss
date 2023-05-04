@@ -1,13 +1,13 @@
-.main-rutinas {
+.main{
   color: $font-color;
   background-color: $background-color;
-  padding: 1em;
-  h1 {
-    
-    font-size: 3.5em;
+  &__title{
+    padding-top: 0.8em;
+    font-size: 2.5em;
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 0.3em;
+    
+    margin-bottom: 0.5em;
     font-weight: 700;
   }
   h2{
@@ -18,10 +18,12 @@
 
 
 @media only screen and (min-width: 1024px) {
-  .main-rutinas {
-    h1 {
+  .main{
+    &__title{
       padding-left: 1em;
       font-size: 3.5em;
+      text-decoration: underline;
+      font-weight: 700;
     }
   }
 }

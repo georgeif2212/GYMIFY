@@ -1,18 +1,20 @@
-.main-dietas {
+.main {
   color: $font-color;
   background-color: $background-color;
-  padding: 2em;
-  h1 {
-    font-size: 3.5em;
-    text-decoration: underline;
+  &__title {
+    padding-top: 0.8em;
     text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
     font-weight: 700;
   }
-  .dietas-padre {
+  .dietas {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
-    .dieta {
+    padding-left: 1em;
+    padding-right: 1em;
+    &__dieta {
       background-color: $dark-card-color;
       display: flex;
       flex-flow: column;
@@ -23,83 +25,85 @@
         padding: 5px;
         width: 100%;
       }
+      &-info {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        padding: 1em;
+        text-align: center;
+        h2 {
+          font-weight: 600;
+          font-size: 2rem;
+          margin: 0%;
+          text-transform: uppercase;
+        }
+        h3 {
+          font-weight: 600;
+          font-size: 1.3rem;
+          margin: 0%;
+        }
+      }
     }
-    .dieta-inverted {
+
+    &__dieta-inverted {
       display: flex;
       flex-flow: column;
       padding: 0.5em 0.5em;
       justify-content: space-between;
+      background-color: $dark-card-color;
       border: 1px solid $border-dark-card-color;
       img {
         padding: 5px;
         width: 100%;
       }
-    }
-    .dieta-inverted-info {
-      display: flex;
-      flex-flow: column;
-      width: 100%;
-      align-content: center;
-      justify-content: center;
-      padding: 1em;
-      text-align: center;
-      h2 {
-        font-weight: 600;
-        font-size: 2rem;
-        margin: 0%;
-        text-transform: uppercase;
-      }
-      h3 {
-        font-weight: 600;
-        font-size: 1.3rem;
-        margin: 0%;
-        
-      }
-    }
-    .dieta-info {
-      display: flex;
-      flex-flow: column;
-      width: 100%;
-      align-content: center;
-      justify-content: center;
-      padding: 1em;
-      text-align: center;
-      h2 {
-        font-weight: 600;
-        font-size: 2rem;
-        margin: 0%;
-        text-transform: uppercase;
-      }
-      h3 {
-        font-weight: 600;
-        font-size: 1.3rem;
-        margin: 0%;
-        
+      &-info {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        padding: 1em;
+        text-align: center;
+        h2 {
+          font-weight: 600;
+          font-size: 2rem;
+          margin: 0%;
+          text-transform: uppercase;
+        }
+        h3 {
+          font-weight: 600;
+          font-size: 1.3rem;
+          margin: 0%;
+        }
       }
     }
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .main-dietas {
+  .main {
     background-color: $background-color;
-    padding: 2em;
-    h1 {
-      font-size: 3.5em;
+    color: $font-color;
+    &__title {
       padding-left: 1em;
+      font-size: 3.5em;
       text-decoration: underline;
-      text-align: start;
+      font-weight: 700;
     }
-    .dietas-padre {
+    .dietas {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1em;
-      .dieta {
+      padding-left: 1em;
+      padding-right: 1em;
+      &__dieta {
         display: flex;
         flex-flow: row;
         padding: 0.5em 0.5em 0.5em 2em;
         justify-content: space-between;
-        
+
         border-radius: 1%;
         &-info {
           display: flex;
@@ -109,18 +113,28 @@
           justify-content: center;
           padding: 1em;
           text-align: center;
+          h2 {
+            font-weight: 600;
+            font-size: 2rem;
+            margin: 0%;
+            text-transform: uppercase;
+          }
+          h3 {
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin: 0%;
+          }
         }
         img {
           padding: 5px;
           width: 55vw;
         }
       }
-      .dieta-inverted {
+      &__dieta-inverted {
         display: flex;
         flex-flow: row-reverse;
-        padding: 0.5em 0.5em 0.5em 2em;
+        padding: 0.5em 2em 0.5em 0.5em;
         justify-content: space-between;
-        
         img {
           padding: 5px;
           width: 55vw;
@@ -143,7 +157,6 @@
             font-weight: 600;
             font-size: 1.3rem;
             margin: 0%;
-            
           }
         }
       }
