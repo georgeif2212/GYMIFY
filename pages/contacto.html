@@ -36,17 +36,66 @@
   </head>
 
   <body>
-    <header class="header">
-      <h1>GYM BIBLE</h1>
-      <nav>
-        <ul class="ul-nav">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./gruposMusculares.html">Grupos musculares</a></li>
-          <li><a href="./rutinas.html">Rutinas</a></li>
-          <li><a href="./dietas.html">Dietas</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <h1 class="navbar-brand mb-0 h1">GYM BIBLE</h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Navegación botón hamburguesa"
+            >
+              <i class="ri-menu-fill"></i>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              data-bs-scroll="true"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h1 class="offcanvas-header-title" id="offcanvasNavbarLabel">
+                  GYM BIBLE
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./rutinas.html">Rutinas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./gruposMusculares.html"
+                      >Grupos musculares</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./dietas.html">Dietas</a>
+                  </li>
+                  <li class="nav-item link-active">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -146,100 +195,99 @@
       </div>
 
       <!-- --------- Sección contacto ------- -->
-        <section class="container contacto">
-          <div class="row">
-            <div
-              class="col-lg-4"
-              data-aos="fade-right"
-              data-aos-delay="100"
-              data-aos-duration="1000"
-            >
-              <article>
-                <h2>Contacto</h2>
-                <p>
-                  Para todo tipo de consultas, sugerencias o quejas, envianos un
-                  correo eléctronico utilizando el siguiente formulario
-                </p>
-              </article>
-            </div>
-
-            <div
-              class="col-lg-8"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="1000"
-            >
-              <iframe
-                class="mapa"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.393912478474!2d-99.2852058902073!3d19.352089143173583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2074a4aea180d%3A0x1151e61121fd01f3!2sUniversidad%20Aut%C3%B3noma%20Metropolitana%20Unidad%20Cuajimalpa!5e0!3m2!1ses!2smx!4v1682202931357!5m2!1ses!2smx"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-              <div class="info mt-4">
-                <h3>Ubicación:</h3>
-                <p>
-                  Vasco de Quiroga 4871, Contadero, Cuajimalpa de Morelos, 05348
-                  Ciudad de México, CDMX
-                </p>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 mt-4">
-                  <div class="info">
-                    <h3>Correo:</h3>
-                    <p>jinfante2212@gmail.com</p>
-                  </div>
-                </div>
-                <div class="col-lg-6 mt-4">
-                  <div class="info">
-                    <h3>Número celular:</h3>
-                    <p>+52 5532547632</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- CUESTIONARIO FORMS -->
-              <form>
-                <div class="row">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Nombre completo"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <input
-                      type="email"
-                      class="form-control mt-3 mt-md-0"
-                      placeholder="Correo electrónico"
-                      required
-                    />
-                  </div>
-                </div>
-                <input
-                  type="text"
-                  class="form-control mt-3"
-                  placeholder="Tema"
-                  required
-                />
-                <textarea
-                  class="form-control mt-3"
-                  rows="5"
-                  placeholder="Mensaje"
-                  required
-                ></textarea>
-                <div class="text-center">
-                  <button class="boton-general" type="submit">
-                    Enviar mensaje
-                  </button>
-                </div>
-              </form>
-            </div>
+      <section class="container contacto">
+        <div class="row">
+          <div
+            class="col-lg-4"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <article>
+              <h2>Contacto</h2>
+              <p>
+                Para todo tipo de consultas, sugerencias o quejas, envianos un
+                correo eléctronico utilizando el siguiente formulario
+              </p>
+            </article>
           </div>
-        </section>
-      
+
+          <div
+            class="col-lg-8"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <iframe
+              class="mapa"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.393912478474!2d-99.2852058902073!3d19.352089143173583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2074a4aea180d%3A0x1151e61121fd01f3!2sUniversidad%20Aut%C3%B3noma%20Metropolitana%20Unidad%20Cuajimalpa!5e0!3m2!1ses!2smx!4v1682202931357!5m2!1ses!2smx"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="info mt-4">
+              <h3>Ubicación:</h3>
+              <p>
+                Vasco de Quiroga 4871, Contadero, Cuajimalpa de Morelos, 05348
+                Ciudad de México, CDMX
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mt-4">
+                <div class="info">
+                  <h3>Correo:</h3>
+                  <p>jinfante2212@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-lg-6 mt-4">
+                <div class="info">
+                  <h3>Número celular:</h3>
+                  <p>+52 5532547632</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CUESTIONARIO FORMS -->
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre completo"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control mt-3 mt-md-0"
+                    placeholder="Correo electrónico"
+                    required
+                  />
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control mt-3"
+                placeholder="Tema"
+                required
+              />
+              <textarea
+                class="form-control mt-3"
+                rows="5"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+              <div class="text-center">
+                <button class="boton-general" type="submit">
+                  Enviar mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="container-fluid">

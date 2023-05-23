@@ -26,69 +26,44 @@ a {
   text-decoration: none;
 }
 
-.header {
-  color: white;
+header {
   font-family: "Poppins", sans-serif;
   background-color: #D21312;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-.header h1 {
-  padding: 0.5em 0em 0em 0em;
-  font-size: 2.6em;
+header .navbar-brand {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+header .navbar-brand:hover {
+  color: white;
+}
+header .navbar-nav .nav-link {
+  color: white;
+}
+header .navbar-nav .nav-link:hover {
+  font-weight: bold;
+}
+header .navbar-nav .link-active {
+  color: white;
+  text-decoration: underline;
+}
+header .navbar .offcanvas {
+  background-color: #0f0f0f;
+  border-top: #070A52 solid 2px;
+  border-left: #070A52 solid 2px;
+}
+header .navbar .offcanvas-header {
+  padding: 2em;
+}
+header .navbar .offcanvas-header-title {
+  color: white;
   font-weight: 700;
-  margin: 0%;
-}
-.header nav .ul-nav {
-  display: flex;
-  font-size: 1em;
-  gap: 1rem;
-  font-weight: 400;
-  color: white;
-  padding: 0%;
-}
-.header nav .ul-nav li {
-  text-align: center;
-}
-.header nav .ul-nav li a {
-  color: white;
-}
-.header nav .ul-nav li a:hover {
-  font-weight: 600;
 }
 
-@media only screen and (min-width: 1024px) {
-  .header {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    background-color: #D21312;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0em 2em;
-  }
-  .header h1 {
-    font-size: 3em;
-    padding: 0.1em 0em 0.1em 1em;
-  }
-  .header nav {
-    align-self: center;
-  }
-  .header nav .ul-nav {
-    display: flex;
-    align-content: space-around;
-    gap: 20px;
-    font-size: 1em;
-    margin-bottom: 0rem;
-    font-weight: 400;
-    color: white;
-  }
-}
 footer {
   color: black;
   background-color: white;
@@ -258,6 +233,12 @@ footer .social-media {
   font-size: 1em;
 }
 
+.ri-menu-fill {
+  color: white;
+  border: none;
+  font-size: 20px;
+}
+
 .logos {
   background-color: #000000;
   color: white;
@@ -313,11 +294,12 @@ footer .social-media {
   text-transform: uppercase;
 }
 .main .objetivo {
-  padding: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 .main .objetivo__content h3 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;

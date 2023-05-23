@@ -39,11 +39,12 @@
     }
   }
   .objetivo {
-    padding: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     &__content {
       h3 {
         font-weight: 700;
-        font-size: 48px;
+        font-size: 40px;
         line-height: 60px;
         margin-bottom: 20px;
         text-transform: uppercase;

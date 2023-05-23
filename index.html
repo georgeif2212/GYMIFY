@@ -42,17 +42,71 @@
   </head>
 
   <body>
-    <header class="header">
-      <h1>GYM BIBLE</h1>
-      <nav class="">
-        <ul class="ul-nav">
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/gruposMusculares.html">Grupos musculares</a></li>
-          <li><a href="./pages/rutinas.html">Rutinas</a></li>
-          <li><a href="./pages/dietas.html">Dietas</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <h1 class="navbar-brand mb-0 h1">GYM BIBLE</h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Navegación botón hamburguesa"
+            >
+              <i class="ri-menu-fill"></i>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              data-bs-scroll="true"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h1 class="offcanvas-header-title" id="offcanvasNavbarLabel">
+                  GYM BIBLE
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link-active"
+                      aria-current="page"
+                      href="./index.html"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/rutinas.html">Rutinas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/gruposMusculares.html"
+                      >Grupos musculares</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/dietas.html">Dietas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html"
+                      >Contacto</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
