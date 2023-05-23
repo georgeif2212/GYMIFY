@@ -1,65 +1,38 @@
-.header {
-  color: $font-color;
+header {
   font-family: "Poppins", sans-serif;
   background-color: $primary-color;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  h1 {
-    padding: 0.5em 0em 0em 0em;
-    font-size: 2.6em;
-    font-weight: 700;
-    margin: 0%;
-  }
-  nav{
-    .ul-nav {
-      display: flex;
-      font-size: 1em;
-      gap: 1rem;
-      font-weight: 400;
+  .navbar {
+    &-brand {
       color: $font-color;
-      padding: 0%;
-      li {
-        text-align: center;
-        a {
-          color: $font-color;
-          &:hover{
-            font-weight: 600;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .header {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    background-color: $primary-color;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0em 2em;
-    h1 {
-      font-size: 3em;
-      padding: 0.1em 0em 0.1em 1em;
-    }
-    nav{
-      align-self:center;
-      .ul-nav {
-        display: flex;
-        align-content: space-around;
-        gap: 20px;
-        font-size: 1em;
-        margin-bottom: 0rem;
-        font-weight: 400;
+      font-size: 2rem;
+      font-weight: 900;
+      &:hover {
         color: $font-color;
       }
-    }    
-  } 
+    }
+    &-nav{
+      .nav-link {
+        color: white;
+        &:hover{
+          font-weight: bold;
+        }
+      }
+      .link-active{
+        color: white;
+        text-decoration: underline;
+      }
+    } 
+    .offcanvas{
+      background-color: $dark-card-color;
+      border-top: $secundary-color solid 2px;
+      border-left: $secundary-color solid 2px;
+      &-header{
+        &-title{
+          color: $font-color;
+          font-weight: 700;
+        }
+      }
+      
+    }
+  }
 }
