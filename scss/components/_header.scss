@@ -1,6 +1,9 @@
 header {
   font-family: "Poppins", sans-serif;
   background-color: $primary-color;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   .navbar {
     &-brand {
       color: $font-color;
@@ -27,6 +30,7 @@ header {
       border-top: $secundary-color solid 2px;
       border-left: $secundary-color solid 2px;
       &-header{
+        padding: 2em;
         &-title{
           color: $font-color;
           font-weight: 700;

@@ -29,6 +29,9 @@ a {
 header {
   font-family: "Poppins", sans-serif;
   background-color: #D21312;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 header .navbar-brand {
   color: white;
@@ -52,6 +55,9 @@ header .navbar .offcanvas {
   background-color: #0f0f0f;
   border-top: #070A52 solid 2px;
   border-left: #070A52 solid 2px;
+}
+header .navbar .offcanvas-header {
+  padding: 2em;
 }
 header .navbar .offcanvas-header-title {
   color: white;
@@ -230,7 +236,7 @@ footer .social-media {
 .ri-menu-fill {
   color: white;
   border: none;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .logos {
