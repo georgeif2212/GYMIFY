@@ -34,12 +34,12 @@ header {
   z-index: 1000;
 }
 header .navbar-brand {
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
   font-size: 2rem;
   font-weight: 900;
 }
 header .navbar-brand:hover {
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
 }
 header .navbar-nav .nav-link {
   color: white;
@@ -52,7 +52,7 @@ header .navbar-nav .link-active {
   text-decoration: underline;
 }
 header .navbar .offcanvas {
-  background-color: #0f0f0f;
+  background-color: #141414;
   border-top: #070A52 solid 2px;
   border-left: #070A52 solid 2px;
 }
@@ -60,7 +60,7 @@ header .navbar .offcanvas-header {
   padding: 2em;
 }
 header .navbar .offcanvas-header-title {
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
   font-weight: 700;
 }
 
@@ -175,7 +175,7 @@ footer .social-media {
   margin: 10px;
   border: 2px solid #D21312;
   background-color: #D21312;
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
 }
 .boton-general:hover {
   background: #8f0d0d;
@@ -194,11 +194,11 @@ footer .social-media {
 }
 
 .card {
-  border: 2px solid #201f1f;
-  background-color: #0f0f0f;
+  border: 2px solid #242424;
+  background-color: #141414;
   width: 100%;
   border-radius: 8px;
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
 }
 .card-title {
   font-weight: bold;
@@ -206,6 +206,7 @@ footer .social-media {
   padding: 15px 0;
 }
 .card-text {
+  color: rgba(255, 255, 255, 0.74);
   text-align: center;
 }
 
@@ -256,8 +257,8 @@ footer .social-media {
 }
 
 .main {
-  color: white;
-  background-color: #000000;
+  color: rgba(255, 255, 255, 0.96);
+  background-color: #111111;
 }
 .main .hero {
   width: 100%;
@@ -282,10 +283,10 @@ footer .social-media {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
 }
 .main .hero__text h2 {
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
   margin-bottom: 40px;
   font-size: 15px;
   font-weight: 500;
@@ -328,8 +329,8 @@ footer .social-media {
   }
 }
 .main {
-  color: white;
-  background-color: #000000;
+  color: rgba(255, 255, 255, 0.96);
+  background-color: #111111;
 }
 .main__title {
   padding-top: 0.8em;
@@ -356,8 +357,8 @@ footer .social-media {
 
 @media only screen and (min-width: 1024px) {
   .main {
-    background-color: #000000;
-    color: white;
+    background-color: #111111;
+    color: rgba(255, 255, 255, 0.96);
   }
   .main__title {
     padding-left: 1em;
@@ -427,8 +428,8 @@ footer .social-media {
   }
 }
 .main {
-  color: white;
-  background-color: #000000;
+  color: rgba(255, 255, 255, 0.96);
+  background-color: #111111;
 }
 .main__title {
   padding-top: 0.8em;
@@ -451,8 +452,8 @@ footer .social-media {
   }
 }
 .main {
-  color: white;
-  background-color: #000000;
+  color: rgba(255, 255, 255, 0.96);
+  background-color: #111111;
 }
 .main__title {
   padding-top: 0.8em;
@@ -469,11 +470,11 @@ footer .social-media {
   padding-right: 1em;
 }
 .main .dietas__dieta {
-  background-color: #0f0f0f;
+  background-color: #141414;
   display: flex;
   flex-flow: column;
   padding: 0.5em 0.5em;
-  border: 1px solid #201f1f;
+  border: 1px solid #242424;
   border-radius: 1%;
 }
 .main .dietas__dieta img {
@@ -499,14 +500,18 @@ footer .social-media {
   font-weight: 600;
   font-size: 1.3rem;
   margin: 0%;
+  color: rgba(255, 255, 255, 0.74);
+}
+.main .dietas__dieta-info-parrafo {
+  color: rgba(255, 255, 255, 0.6);
 }
 .main .dietas__dieta-inverted {
   display: flex;
   flex-flow: column;
   padding: 0.5em 0.5em;
   justify-content: space-between;
-  background-color: #0f0f0f;
-  border: 1px solid #201f1f;
+  background-color: #141414;
+  border: 1px solid #242424;
 }
 .main .dietas__dieta-inverted img {
   padding: 5px;
@@ -531,12 +536,16 @@ footer .social-media {
   font-weight: 600;
   font-size: 1.3rem;
   margin: 0%;
+  color: rgba(255, 255, 255, 0.74);
+}
+.main .dietas__dieta-inverted-info-parrafo {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media only screen and (min-width: 1024px) {
   .main {
-    background-color: #000000;
-    color: white;
+    background-color: #111111;
+    color: rgba(255, 255, 255, 0.96);
   }
   .main__title {
     padding-left: 1em;
@@ -614,8 +623,8 @@ footer .social-media {
   }
 }
 .main {
-  color: white;
-  background-color: #000000;
+  color: rgba(255, 255, 255, 0.96);
+  background-color: #111111;
 }
 .main__title {
   padding-top: 0.8em;
@@ -663,8 +672,8 @@ footer .social-media {
   }
 }
 .main-info-dietas {
-  background-color: #000000;
-  color: white;
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.96);
 }
 .main-info-dietas h1 {
   padding-top: 1em;
